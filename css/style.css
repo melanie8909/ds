@@ -31,6 +31,12 @@ h1,h2,h3,h4,h5,h6,p,a{
 	    max-width: 1140px;
 	}
 }
+.text-ds{
+	color: var(--ds-primary);
+}
+.text-ds-secondary{
+	color: var(--ds-secondary);
+}
 /* btn */
 .btn-primary{
     color: var(--white);
@@ -89,7 +95,15 @@ h1,h2,h3,h4,h5,h6,p,a{
 		margin: 0;
 	}
 }
-
+#high2low,
+#low2high{
+	border-top-right-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+    border-right: 1px solid var(--ds-border); 
+}
+#low2high{
+	display: none;
+}
 /* card */
 .card-ds{
 	height: 100%;
@@ -273,6 +287,9 @@ h1,h2,h3,h4,h5,h6,p,a{
     background-color: var(--ds-secondary);
     border-color: var(--ds-secondary);
 }
+.btn-group .btn-ds:hover i{
+	color: var(--white);
+}
 .btn-group .btn-ds:first-child{
 	border-left: 1px solid var(--ds-border);
 }
@@ -283,12 +300,16 @@ h1,h2,h3,h4,h5,h6,p,a{
 .btn-check:checked+.btn-ds,
 .btn-ds.active,
 .btn-ds.dropdown-toggle.show,
-.btn-ds:active {
+.btn-ds:active{
     color: var(--white);
     background-color: var(--ds-primary);
     border-color: var(--ds-primary);
 }
 
+.btn-ds.active i,
+.btn-ds:active i{
+    color: var(--white);
+}
 
 /* navbar */
 .navbar-ds {
@@ -440,12 +461,23 @@ h1,h2,h3,h4,h5,h6,p,a{
 	font-size: 30px;
 	margin-bottom: 10px;
 }
-
+.loop {
+	position: relative;
+}
+.loop .owl-dots{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 
 /* section-banner */
 .section-banner{
 	padding: 100px 0 40px;
-	/*background-color: lightblue;*/
+	background-image: url(../img/banner-group-background.png);
+	background-repeat-x: repeat;
+	background-repeat-y: no-repeat;
+	background-size: 100%;
 }
 .section-banner .box-banner{
 	padding: 0;

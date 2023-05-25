@@ -124,10 +124,12 @@
 					<div class="row">
 						<div class="col-12 btn-group-bgline">
 							<div class="btn-group">
-								<button class="btn active btn-ds">限時特賣</button>
+								<button class="btn btn-ds active">全部商品</button>
+								<button class="btn btn-ds">限時特賣</button>
 								<button class="btn btn-ds">新品上架</button>
 								<button class="btn btn-ds">熱銷排行</button>
-								<button class="btn btn-ds">價格</button>
+								<button class="btn btn-ds" id="high2low" onclick="high2low()">價格 <i class="fa-solid fa-angle-down text-ds"></i></button>
+								<button class="btn btn-ds" id="low2high" onclick="low2high()">價格 <i class="fa-solid fa-angle-up text-ds"></i></button>
 							</div>
 						</div>
 					</div>

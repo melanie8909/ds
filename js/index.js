@@ -69,3 +69,12 @@ $('.toggle-dropmenu').click(function(){
     $(this).parent().siblings('.sub-dropmenu').toggleClass('show');
 });
 
+// 價格按鈕切換
+function low2high(){
+    $("#low2high").css("display","none");
+    $("#high2low").css("display","block");
+}
+function high2low(){
+    $("#high2low").css("display","none");
+    $("#low2high").css("display","block");
+}
