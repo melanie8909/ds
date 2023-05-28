@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+
+	<title>東昕創新-填寫資料</title>
+</head>
+<body>
+ 	<nav class="navbar-ds navbar navbar-expand-lg navbar-light">
+		<div class="container">
+
+			<a class="navbar-brand-ds navbar-brand" href="index.html">
+				<h1>
+					<img src="img/logo_90x90.png" alt="東新設計">
+					<span>東昕創新</span>
+				</h1>
+			</a>
+
+
+			
+			<!-- Button trigger modal Begin-->
+			<a href="##" class="btn btn-ds-side btn-side-cart rounded-circle" data-bs-toggle="modal" data-bs-target="#cartModal">
+			  <i class="fa-solid fa-cart-shopping"></i>
+			</a>
+			<a href="##" class="btn btn-ds-side btn-side-search  rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</a>
+			<!-- Button trigger modal End-->
+
+
+
+			<!-- 漢堡按鈕 Begin -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+			<!-- 漢堡按鈕 End -->
+			
+
+
+			<div class="collapse navbar-collapse navbar-nav-group-ds" id="navbarNav">
+				<!-- <ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="##"><i class="fa-regular fa-file-lines"></i> 訂單查詢</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="##"><i class="fa-regular fa-envelope"></i> 聯絡我們</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="##"><i class="fa-regular fa-lightbulb"></i> 購物說明</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="##" data-bs-toggle="modal" data-bs-target="#loginModal">
+							<i class="fa-regular fa-user"></i> 登入/註冊
+						</a>
+					</li>
+				</ul> -->
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="account.html">
+							<span class=" text-ds-secondary text-decoration-underline">某某某</span> 您好：
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="##"><i class="fa-regular fa-file-lines"></i> 訂單查詢</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="##"><i class="fa-regular fa-envelope"></i> 聯絡我們</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="##"><i class="fa-regular fa-lightbulb"></i> 購物說明</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="##" data-bs-toggle="modal" data-bs-target="#loginModal">
+							<i class="fa-regular fa-user"></i> 登出
+						</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">首頁</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="product-list.html">所有商品</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="##">兒童專區</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="##">最新消息</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="##">會員福利</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+
+	<!-- Product -->
+	<section class="section section-cart">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="cart-content">
+
+						<!-- steps begin -->
+						<div class="box-step row justify-content-center">
+							<div class="col-12 col-md-5">
+								<div class="steps row justify-content-between">
+									<div class="col-3">
+										<p class="step active">1
+											<span>購物車</span>
+										</p>
+									</div>
+									<div class="col-3">
+										<p class="step active">2
+											<span>填寫資料</span>
+										</p>
+									</div>
+									<div class="col-3">
+										<p class="step">3
+											<span>訂單確認</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- steps end -->
+
+						<!-- 上半部 購物車清單標題 begin -->
+						<h2 class="title">合計<span class="ccy fw-bold"">NT$</span><span class="price fw-bold"">2,060</span> 購物車(<span class="text-ds">1</span>件)</h2>
+						<a href="##" class="text-ds-secondary toggle-cart-list">
+							<i class="fa-solid fa-angle-down"></i>
+						</a>
+						<!-- 上半部 購物車清單標題 end -->
+
+						<!-- 上半部 購物車清單 begin -->
+						<div class="cart-list cart-table review row">
+							<!-- 清單 begin -->
+							<div class="col-12">
+								<!-- table begin -->
+								<table class="table">
+								  <thead>
+								    <tr>
+								      <th class="product-info">商品資料</th>
+								      <th class="product-discount">優惠</th>
+								      <th class="product-price">單件價格</th>
+								      <th class="product-count">數量</th>
+								      <th class="product-sum">小計</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <td class="product-info">
+								      	<div class="box-product">
+								      		<div class="box-img">
+									      		<img class="img-fluid" src="https://api.fnkr.net/testimg/800x800/CCCED1/FFF/?text=800x800">
+									      	</div>
+									      	<div class="box-txt">
+									      		<p class="product-brand">ProDHA Spectrum</p>
+									      		<p class="product-name">愛寶視魚油膠囊食品</p>
+									      	</div>
+								      	</div>
+								      </td>
+								      <td class="product-discount">
+								      	<div class="box-txt">
+								      		<p>優惠方案</p>
+								      	</div>
+								      </td>
+								      <td class="product-price">
+								      	<div class="box-price">
+								      		<p class="price">NT$1,030</p>
+								      		<p class="orig-price">NT$2,000</p>
+								      	</div>
+								      </td>
+								      <td class="product-count">
+								      	<div class="box-txt text-center">
+								      		<p><span class="qyt">1</span>件</p>
+								      	</div>
+								      </td>
+								      <td class="product-sum">
+								      	<p class="sum-price">NT$1,030</p>
+								      </td>
+								    </tr>
+								    <tr>
+								      <td class="product-info">
+								      	<div class="box-product">
+								      		<div class="box-img">
+									      		<img class="img-fluid" src="https://api.fnkr.net/testimg/800x800/CCCED1/FFF/?text=800x800">
+									      	</div>
+									      	<div class="box-txt">
+									      		<p class="product-brand">ProDHA Spectrum</p>
+									      		<p class="product-name">愛寶視魚油膠囊食品</p>
+									      	</div>
+								      	</div>
+								      </td>
+								      <td class="product-discount">
+								      	<div class="box-txt">
+								      		<p>優惠方案</p>
+								      	</div>
+								      </td>
+								      <td class="product-price">
+								      	<div class="box-price">
+								      		<p class="price">NT$1,030</p>
+								      		<p class="orig-price">NT$2,000</p>
+								      	</div>
+								      </td>
+								      <td class="product-count">
+								      	<div class="box-txt text-center">
+								      		<p><span class="qyt">1</span>件</p>
+								      	</div>
+								      </td>
+								      <td class="product-sum">
+								      	<p class="sum-price">NT$1,030</p>
+								      </td>
+								    </tr>
+								  </tbody>
+								  <tfoot>
+								  	<tr>
+								      <td class="all-sum">
+								      	<p>總計<span>NT$2,060</span></p>
+								      </td>
+								    </tr>
+								  </tfoot>
+								</table>
+								<!-- table end -->
+							</div>
+							<!-- 清單 end -->
+							<!-- 小結 begin -->
+							<div class="col-12 col-md-4 ms-auto">
+								<div class="cart-order review">
+								    <div class="item">
+									    <p class="text-ds">折抵購物金</p>
+									    <p ><span class="ccy">NT$</span><span class="price">0</span> 購物金</p>
+									    <small class="text-secondary w-100 text-end">購物金餘額 <span class="ccy">NT$</span><span class="price">0</span></small>
+								    </div>
+									<div class="item">
+									    <p>運費</p>
+									    <p><span class="ccy">NT$</span><span class="price">80</span></p>
+								    </div>
+									<div class="item">
+									    <p>使用優惠券</p>
+									    <p>- <span class="ccy">NT$</span><span class="price">0</span></p>
+								    </div>
+									<div class="item">
+									    <p>使用紅利點數</p>
+									    <p><span class="price">0</span>點</p>
+								    </div>
+									<div class="item sum">
+									    <p>合計</p>
+									    <p><span class="ccy">NT$</span><span class="price">2,140</span></p>
+									    <small class="text-secondary w-100 text-end">取貨後7天獲得 +<span class="price">10</span>點數</small>
+								    </div>
+								</div>
+							</div>
+							<!-- 小結 end -->
+
+						</div>	
+						<!-- 上半部 購物車清單 end -->
+
+						<!-- 下半部 顧客資料/訂單備註/送貨資料/付款資料 brgin-->
+						<div class="row">
+
+							
+							<div class="col-12 col-md-6">
+								<!-- 顧客資料 begin -->
+								<h2 class="title">顧客資料</h2>
+								<div class="cart-customer-info">
+									<div class="item">
+										<label for="customerName" class="form-label">顧客名稱</label>
+										<input id="customerName" type="text" class="form-control" placeholder="請輸入姓名">
+									</div>
+									<div class="item">
+										<label for="customerEmail" class="form-label">Email</label>
+										<input id="customerEmail" type="email" class="form-control" placeholder="請輸入Email" readonly>
+									</div>
+									<div class="item">
+										<label for="customerPhone">電話號碼</label>
+										<input type="tel" class="form-control is-invalid" id="customerPhone" required>
+										<p><small class="text-danger">電話號碼是必須的</small></p>
+										<div class="form-check">
+											<input type="checkbox" id="saveCustomerPhone" class="form-check-input" checked>
+											<label class="form-check-label" for="saveCustomerPhone">
+												儲存這個電話號碼
+											</label>
+										</div>
+									</div>
+									<div class="item">
+										<label for="customerPhone2">聯絡電話</label>
+										<input type="tel" class="form-control" id="customerPhone2" placeholder="請輸入聯絡電話">
+										<!-- <small class="text-secondary">請輸入聯絡電話</small> -->
+									</div>
+									<div class="item">
+										<label for="customerAddress">地址</label>
+										<input type="text" class="form-control" id="customerAddress" placeholder="請輸入地址">
+										<!-- <small class="text-secondary">請輸入地址</small> -->
+									</div>
+								</div>
+								<!-- 顧客資料 end -->
+
+								<!-- 訂單備註 begin -->
+								<h2 class="title">訂單備註</h2>
+								<div class="cart-customer-desc">
+									<textarea class="form-control" rows="3" placeholder="有什麼想告訴賣家的嗎？"></textarea>
+								</div>
+								<!-- 訂單備註 end -->
+							</div>
+							<!-- 送貨付款方式 end -->
+
+							
+							<div class="col-12 col-md-6">
+
+								<!-- 送貨資料 begin -->
+								<h2 class="title">送貨資料</h2>
+								<div class="cart-shipping-info">
+									<div class="item">
+										<p>已選擇的送貨方式：台灣本島宅配，運費<span class="price">$80</span>（送貨需要3-7日）</p>
+										<div class="form-check">
+											<input type="checkbox" id="sameCustomerInfo" class="form-check-input" checked>
+											<label class="form-check-label" for="sameCustomerInfo">
+												收件人資料與顧客相同
+											</label>
+										</div>
+									</div>
+									<div class="item">
+										<label for="recipientName">收件人姓名</label>
+										<input type="tel" class="form-control is-invalid" id="recipientName" required>
+										<p class="mb-0"><small class="text-danger">請填入收件人真實姓名，以確保順利收件</small></p>
+										<p class="mb-0"><small class="text-danger">收件人姓名 是必須的</small></p>
+									</div>
+									<div class="item">
+										<label for="recipientPhone">收件人電話號碼</label>
+										<input type="tel" class="form-control is-invalid" id="recipientPhone" required>
+										<p class="mb-0"><small class="text-danger">收件人電話號碼是必須的</small></p>
+									</div>
+									<div class="item">
+										<label>收件人地址</label>
+										<p>送貨地點：台灣</p>
+										<div class="row">
+											<div class="col-6">
+												<select class="form-select is-invalid">
+													<option>城市/縣</option>
+												</select>
+												<p class="mb-0"><small class="text-danger">城市/縣 是必須的</small></p>
+											</div>
+											<div class="col-6">
+												<select class="form-select is-invalid">
+													<option>地區</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<label for="recipientAddress">地址</label>
+										<input type="tel" class="form-control is-invalid" id="recipientAddress" required>
+										<p class="mb-0"><small class="text-danger">請填入收件人真實姓名，以確保順利收件</small></p>
+										<p><small class="text-danger">收件人姓名 是必須的</small></p>
+
+										<div class="form-check">
+											<input type="checkbox" id="saveRecipientAddress" class="form-check-input">
+											<label class="form-check-label" for="saverRecipientAddress">
+												儲存這個送貨地址
+											</label>
+										</div>
+										<div class="form-check">
+											<input type="checkbox" id="saveDefaultAddress" class="form-check-input">
+											<label class="form-check-label" for="saverDefaultAddress">
+												設定為預設地址
+											</label>
+										</div>
+									</div>
+								</div>
+								<!-- 送貨資料 end -->
+
+
+								<!-- 付款資料 begin -->
+								<h2 class="title">付款資料</h2>
+								<div class="cart-payment-info">
+									<p>已選擇的付款方式：貨到付款</p>
+								</div>
+								<!-- 付款資料 begin -->
+
+							</div>
+
+
+							<div class="col-12">
+								<div class="cart-cta">
+									<div class="item d-flex justify-content-center mb-3">
+										<div class="form-check">
+											<input type="checkbox" id="agreement" class="form-check-input">
+											<label class="form-check-label" for="agreement">
+												我同意<a href="##" target="_blank" class="text-ds text-decoration-underline" >網站服務條款</a>及<a href="##" target="_blank" class="text-ds text-decoration-underline" >隱私權政策</a>
+											</label>
+										</div>
+									</div>
+								    <div class="item d-flex justify-content-center">
+								    	<div class="col-8 col-md-3 mb-3">
+								    		<a href="##" class="btn btn-gold w-100">提交訂單</a>
+								    	</div>
+								    </div>
+									<a id="back2cart" class="text-ds text-decoration-underline" href="cart.html"> < 回購物車 </a>
+								</div>
+							</div>
+						</div>
+						<!-- 下半部 顧客資料/訂單備註/送貨資料/付款資料 end-->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-2 mb-3 text-center text-xl-start">
+					<a href="##">
+						<img src="img/logo_w_90x90.png" alt="東昕創新">
+					</a>
+				</div>
+				<div class="col-3 col-md-2 mb-3">
+					<a href="##">關於我們</a>
+					<a href="##">聯絡我們</a>
+				</div>
+				<div class="col-3 col-md-2 mb-3">
+					<a href="##">全部商品</a>
+					<a href="##">訂單查詢</a>
+					<a href="##">訂單相關說明</a>
+				</div>
+				<div class="col-3 col-md-2 mb-3">
+					<a href="##">付款方式說明</a>
+					<a href="##">寄送方式說明</a>
+					<a href="##">售後方式說明</a>
+				</div>
+				<div class="col-3 col-md-2 mb-3">
+					<a href="##">隱私權條款</a>
+				</div>
+				<div class="col-12 col-md-2 mb-3 box-social">
+					<a href="##"><img src="img/Icon Line.png" alt="Line"></a>
+					<a href="##"><img src="img/Icon FB.png" alt="FB"></a>
+					<a href="##"><img src="img/Icon IG.png" alt="IG"></a>
+				</div>
+				<div class="col-12 box-copyright">
+					<p>© 2023  All Right Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	
+
+
+
+	<!-- bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/9b16ef0d38.js" crossorigin="anonymous"></script>
+
+	<!-- carousel -->
+    <!-- <script src="assets/vEndors/jquery.min.js"></script> -->
+    <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>

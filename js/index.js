@@ -69,6 +69,13 @@ $('.toggle-dropmenu').click(function(){
     $(this).parent().siblings('.sub-dropmenu').toggleClass('show');
 });
 
+// 明細
+$('.toggle-cart-list').click(function(){
+    $(this).toggleClass('show');
+    $(this).siblings('.cart-list').toggleClass('show');
+});
+
+
 // 價格按鈕切換
 function low2high(){
     $("#low2high").css("display","none");
