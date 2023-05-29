@@ -1340,7 +1340,7 @@ a.text-ds:hover{
 	margin-bottom: 0px;
 }
 .modal-dialog label:not(.form-check-label){
-	width: 15%;
+	width: 20%;
 	text-align: left;
 	margin-right: 10px;
 }
@@ -1350,10 +1350,16 @@ a.text-ds:hover{
 .modal-dialog input[type="tel"],
 .modal-dialog input[type="date"],
 .modal-dialog select{
-	width: 60%;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background-color: #fff;
+	border-radius: none;
+	width: 50%;
 	height: 40px;
 	border: none;
 	border-bottom: 1px solid #000;
+	color: #333333;
 }
 @media screen and (min-width:992px){
 	.modal-dialog label:not(.form-check-label){
