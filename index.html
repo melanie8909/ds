@@ -576,24 +576,151 @@
 
 		<!-- login Begin -->
 			<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			  <div class="modal-dialog">
+			  <div class="modal-dialog login">
 			    <div class="modal-content">
-			      <div class="modal-header">
-			        <h5 class="modal-title" id="loginModalLabel">登入</h5>
-			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			      </div>
 			      <div class="modal-body">
-			        ...
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary">Save changes</button>
+			        <div class="row justify-content-center">
+			        	<div class="col-12 text-center mb-5">
+			        		<p class="title"> 登入帳號</p>
+			        		<p>歡迎回來！請登入你的帳號</p>
+			        	</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="loginEmail">Email</label>
+							<input type="email" id="loginEmail" placeholder="請輸入您的Email">
+						</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="loginPassword">密碼</label>
+							<input type="password" id="loginPassword" placeholder="請輸入您的密碼">
+						</div>
+						<div class="col-12 mb-3 row justify-content-center">
+							<div class="col-5 col-md-3">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+								<label class="form-check-label" for="flexCheckChecked">
+								    記住密碼
+								</label>
+							</div>
+							<div class="col-5 col-md-3 text-end">
+								<a href="##" class="text-ds text-decoration-underline" data-bs-target="#forgetPasswordModal" data-bs-toggle="modal" data-bs-dismiss="modal">忘記密碼</a>
+							</div>
+						</div>
+						<div class="col-12 mt-5 row justify-content-center">
+							<div class="col-6 col-md-3">
+								<a href="##" class="w-100 mb-3 btn btn-primary">登入</a>
+							</div>
+							<div class="col-6 col-md-3">
+								<a href="##" class="w-100 mb-3 btn btn-primary-outline" data-bs-target="#signUpModal" data-bs-toggle="modal" data-bs-dismiss="modal">註冊</a>
+							</div>
+						</div>
+			        </div>
 			      </div>
 			    </div>
 			  </div>
 			</div>
-			</div>
 		<!-- login End -->
+
+		<!-- sign-up Begin -->
+			<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog sign-up">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <div class="row justify-content-center">
+			        	<div class="col-12 text-center mb-5">
+			        		<p class="title">加入我們</p>
+			        		<p>建立您的帳號</p>
+			        	</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="signUpEmail">用戶名</label>
+							<input type="text" id="signUpName" placeholder="請輸入您的大名">
+						</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="signUpEmail">Email</label>
+							<input type="email" id="signUpEmail" placeholder="請輸入您的Email">
+						</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="signUpPassword">密碼</label>
+							<input type="text" id="signUpPassword" placeholder="請輸入您的密碼">
+						</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="signUpConfirmPassword">確認密碼</label>
+							<input type="text" id="signUpConfirmPassword" placeholder="請再輸入一次您的密碼">
+						</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="signUpSex">性別</label>
+							<select id="signUpSex">
+							  <option>男</option>
+							  <option>女</option>
+							</select>
+						</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="signUpBDay">生日</label>
+							<input type="date" id="signUpBDay">
+						</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="signUpPhone">聯絡電話</label>
+							<input type="tel" id="signUpPhone" placeholder="請輸入您的聯絡電話">
+						</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="signUpAdd">地址</label>
+							<input type="text" id="signUpAdd" placeholder="請輸入您的地址">
+						</div>
+						<div class="col-12 mb-3 row justify-content-center">
+							<div class="col-12 col-md-6 text-center">
+								<input class="form-check-input" type="checkbox" value="" id="agreeChecked" checked>
+								<label class="form-check-label" for="agreeChecked">
+								    我同意網站<a href="##" target="_blank" class="text-ds text-decoration-underline">服務條款</a>及<a href="##" target="_blank" class="text-ds text-decoration-underline">隱私權政策</a>
+								</label>
+							</div>
+						</div>
+						<div class="col-12 mt-5 row justify-content-center">
+							<div class="col-6">
+								<a href="##" class="w-100 mb-3 btn btn-primary">立即加入</a>
+							</div>
+							<div class="col-12 text-center">
+								<a href="##" class="text-ds text-decoration-underline" data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal">已經有帳號？由此登入</a>
+							</div>
+						</div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		<!-- sign-up End -->
+
+		<!-- forget-password Begin -->
+			<div class="modal fade" id="forgetPasswordModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog forget-password">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <div class="row justify-content-center">
+			        	<div class="col-12 text-center mb-5">
+			        		<p class="title">忘記密碼</p>
+			        		<p>請輸入您的Email</p>
+			        	</div>
+		        		<div class="col-12 text-center mb-3">
+							<label for="forgetPasswordEmail">Email</label>
+							<input type="email" id="forgetPasswordEmail" placeholder="請輸入您的Email">
+						</div>
+						<div class="col-12 mt-5 row justify-content-center">
+							<div class="col-6">
+								<a href="##" class="w-100 mb-3 btn btn-red">重設密碼</a>
+							</div>
+						</div>
+						<div class="col-12 mb-3 row justify-content-center">
+							<div class="col-12 text-center">
+								<a href="##" class="text-ds text-decoration-underline" data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal">會員登入</a>
+							</div>
+							<div class="col-12 text-center">
+								<a href="##" class="text-ds text-decoration-underline" data-bs-target="#signUpModal" data-bs-toggle="modal" data-bs-dismiss="modal">新用戶註冊</a>
+							</div>
+						</div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		<!-- forget-password End -->
+
+
 	<!-- Modal End-->
 
 
