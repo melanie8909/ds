@@ -1354,7 +1354,9 @@ a.text-ds:hover{
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	background-color: #fff;
-	border-radius: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
 	width: 50%;
 	height: 40px;
 	border: none;
