@@ -734,6 +734,9 @@ a.text-ds:hover{
 	line-height: 1;
 	/*background-color: #f00;*/
 }
+.recommend-loop .card-ds .card-body{
+	height: 400px;
+}
 .section-product-content .title{
 	display: inline-block;
 	padding-top: 20px;
@@ -1379,4 +1382,99 @@ a.text-ds:hover{
 
 .modal-dialog.forget-password .title{
 	color: var(--ds-red);
+}
+
+#cartModal.fade-leftin .modal-dialog{
+	margin: 0 0 auto auto;
+	min-height: 100vh;
+}
+#cartModal.fade-leftin .modal-dialog{
+	max-width: 350px;
+	margin: 0 0 auto auto;
+	min-height: 100vh;
+}
+#cartModal .modal-dialog{
+	min-height: 100vh;
+}
+#cartModal .modal-content{
+	min-height: 100vh;
+	border-radius: 0;
+	border: none;
+	padding: 10px 30px;
+}
+#cartModal .modal-content .title{
+	display: inline-block;
+	margin-bottom: 20px;
+	line-height: 1;
+	font-size: 16px;
+	font-weight: 300;
+	position: relative;
+	z-index: 0;
+}
+#cartModal .modal-content .title::after{
+	content: "";
+	display: block;
+	height: 10px;
+	background-color: var(--ds-gold-45);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: .8em;
+	margin: auto;
+	z-index: -1;
+}
+#cartModal .modal-content .item{
+	padding: 10px;
+	border: 1px solid var(--ds-border);
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.item .product-info{
+	border: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--ds-border);
+	margin-bottom: 10px;
+}
+.item .box-product{
+	display: flex;
+	justify-content: flex-start;
+}
+.item .box-product .box-img{
+	width: 60px;
+	margin-right: 10px;
+	border: 1px solid var(--ds-border);
+}
+.item .box-product .box-txt{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+.item .box-product .box-txt p{
+	margin-bottom: 0;
+	line-height: 1.2;
+}
+.item .product-delete{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--ds-border);
+	margin-bottom: 10px;
+}
+.item .product-count{
+	padding-left: 0;
+}
+.item .product-price{
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 0;
+	align-items: center;
+	text-align: right;
+}
+.item .product-price p{
+	margin-bottom: 0;
+	font-family: 'helvetica',san-serif;	
+	font-weight: bold;
 }
