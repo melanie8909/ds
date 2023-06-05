@@ -1478,3 +1478,42 @@ a.text-ds:hover{
 	font-family: 'helvetica',san-serif;	
 	font-weight: bold;
 }
+
+#searchModal .modal-content{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background-color: transparent;
+	padding-top: 50px;
+}
+
+@media screen and (min-width:576px){
+	#searchModal.fade-leftin .modal-dialog{
+		margin: 1.75rem auto;
+	}
+	#searchModal .modal-content{
+		margin-left: auto;
+		margin-right: 60px;
+		padding-top: 50px;
+	}
+}
+@media screen and (min-width:992px){
+	#searchModal.fade-leftin .modal-dialog{
+		margin: 1.75rem 0 auto auto;
+	}
+	#searchModal .modal-content{
+		margin-left: auto;
+		margin-right: 60px;
+		padding-top: 16px;
+		width: 300px;
+	}
+}	
+#searchModal .modal-content a{
+	background-color: var(--ds-primary);
+	border-color: var(--ds-primary);
+	color: var(--white);
+}
+#searchModal .modal-content a:hover{
+	background-color: var(--ds-primary-hover);
+	border-color: var(--ds-primary-hover);
+}
