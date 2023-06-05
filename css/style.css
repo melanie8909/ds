@@ -826,11 +826,14 @@ a.text-ds:hover{
 .product-desc p + img{
 	margin-top: 20px;
 }
+
+
 .btn.mobile{
 	display: none;
 }
 @media screen and (max-width:767px){
 
+	.section-product-list .side-menu,
 	.section-product-content .side-menu{
 		display: none;
 	}
@@ -843,6 +846,7 @@ a.text-ds:hover{
 		background-color: var(--ds-primary-hover);
 		color: var(--white);
 	}
+	.section-product-list .mobile .side-menu,
 	.section-product-content .mobile .side-menu{
 		display: block;
 		margin: 0;
