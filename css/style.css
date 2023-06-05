@@ -1102,7 +1102,7 @@ a.text-ds:hover{
 }
 @media screen and (min-width:992px){
 	.cart-table .product-count .input-group{
-		width: 100px;
+		width: 120px;
 	}
 }
 .cart-table .product-count .sum-price{
