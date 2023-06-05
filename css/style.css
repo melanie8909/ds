@@ -826,7 +826,37 @@ a.text-ds:hover{
 .product-desc p + img{
 	margin-top: 20px;
 }
+.btn.mobile{
+	display: none;
+}
+@media screen and (max-width:767px){
 
+	.section-product-content .side-menu{
+		display: none;
+	}
+	.btn.mobile{
+		display: block;
+		color: var(--ds-primary);
+		border-color: var(--ds-primary);
+	}
+	.btn.mobile:hover{
+		background-color: var(--ds-primary-hover);
+		color: var(--white);
+	}
+	.section-product-content .mobile .side-menu{
+		display: block;
+		margin: 0;
+	}
+	#sideMenuModal{
+		top: 80px;
+	}
+	#sideMenuModal .modal-body{
+		padding: 0;
+	}
+	#sideMenuModal .modal-content{
+		padding: 0;
+	}
+}
 
 
 /* cart */
@@ -1305,12 +1335,61 @@ a.text-ds:hover{
 	right: -10px;
 	margin: auto;
 }
+
+@media screen and (max-width:767px){
+	.section-account .side-menu{
+		display: flex;
+	}
+	.section-account .side-menu > li{
+		width: 25%;
+		display: inline-block;
+		padding: 0 20px;
+		margin: 0;
+		justify-content: center;
+	}
+	.section-account .side-menu > li,
+	.section-account .side-menu > li:first-child{
+		border-top-left-radius: 10px;
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 10px;
+	}
+	.section-account .side-menu > li:last-child{
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 10px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 10px;
+	}
+	.section-account .side-menu li a{
+		text-align: center;
+		text-indent: 0;
+		margin: 0;
+		padding: 0;
+	}
+	.section-account .side-menu .active{
+		position: relative;
+	}
+	.section-account .side-menu .active::after{
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 5px 5px 0 5px;
+		border-color: var(--ds-primary) transparent transparent transparent ;
+		position: absolute;
+		top: auto;
+		bottom: -5px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+
 .account-content{
 	background-color: var(--white);
 	padding: 30px;
 	border-radius: 10px;
 }
-.account-content{}
 .account-content .user-name{
 	border-bottom: 1px dashed var(--ds-border);
 	margin-bottom: 30px;
